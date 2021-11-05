@@ -11,10 +11,6 @@ class Queue:
         self.stack_1 = stack_1  # used for enqueue operations
         self.stack_2 = stack_2  # used for dequeue operations
 
-    def _is_empty(self) -> bool:
-        """The Queue is empty if both stacks are empty."""
-        return not self.stack_1 and not self.stack_2
-
     def enqueue(self, x: int) -> None:
         """Add a new element x to the end of the queue."""
         self.stack_1.append(x)
